@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        header {
+            background-color: #fff;
+        }
+
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho" class="sticky-top">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Cafeteria</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#localização">Localização</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/04/12/11/19/coffee-1324126_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto de grãos de café</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/11/19/12/54/drink-1839134_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto de uma xícara de café com uma torta</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2019/03/24/14/23/bread-4077812_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto de croissants</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/04/17/12/49/barista-5055060_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto de um barista preparando cafés</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/11/29/09/00/doughnuts-1868573_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto de uma mesa com donuts</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+            </div>
+        </div>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="produtos">
+            <div class="row">
+            <h2 class="mt-4">Produtos</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mt-4">
+                    <div class="card text-bg-dark">
+                        <img src="https://via.placeholder.com/240x240" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Cafés</h4>
+                            <h5 class="card-subtitle">Confira nossa variedade de cafés.</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Botão link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-4">
+                    <div class="card text-bg-dark">
+                        <img class="card-img" src="https://via.placeholder.com/240x240" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Salgados</h4>
+                            <h5 class="card-subtitle">Confira nossa variedade de salgados.</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Botão link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-4">
+                    <div class="card text-bg-dark">
+                        <img class="card-img" src="https://via.placeholder.com/240x240" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Tortas e Bolos</h4>
+                            <h5 class="card-subtitle">Confira nossa variedade de tortas e bolos.</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Botão link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-4">
+                    <div class="card text-bg-dark">
+                        <img class="card-img" src="https://via.placeholder.com/240x240" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Bebidas Geladas</h4>
+                            <h5 class="card-subtitle">Confira nossa variedade de bebidas.</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Botão link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-4">
+                    <div class="card text-bg-dark">
+                        <img class="card-img" src="https://via.placeholder.com/240x240" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h5 class="card-subtitle">Confira nossa variedade de </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Botão link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="row">
+                <h2 class="mt-4">Contato</h2>
+            </div>
+        </section>
+        <section id="localização">
+            <div class="row">
+                <h2 class="mt-4">Localização</h2>
+            </div>
+        </section>
+    </div>
+    </div>
+    
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
